@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exa vs. Parallel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Exa <span>vs.</span> Competitors</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Compare</a>
+        <a href="https://docs.exa.ai" class="nav-link">Docs</a>
+        <a href="https://docs.exa.ai/reference" class="nav-link">API</a>
+        <a href="https://exa.ai/pricing" class="nav-link">Pricing</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://exa.ai" class="btn-nav btn-nav--ghost">Sign In</a>
+        <a href="https://exa.ai" class="btn-nav btn-nav--primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <span class="section-label">STRATEGIC COMPARISON</span>
+        <h1>Exa <em>vs.</em> Parallel</h1>
+        <p class="hero-subtitle">Search infrastructure for power tools vs. answer infrastructure for finished products.</p>
+      </div>
+    </section>
+
+    <!-- Description Boxes -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="grid-2">
+          <div class="desc-box">
+            <h3>Exa: The Search Engine for AI</h3>
+            <p>A neural-first search index built to be consumed by LLMs. It provides high-fidelity building blocks (raw content, semantic embeddings, filtering) for developers building custom AI workflows.</p>
+          </div>
+          <div class="desc-box">
+            <h3>Parallel: The Semantic Browser</h3>
+            <p>An objective-driven browsing engine. It delivers finished answers and extracted tasks by combining extraction and reasoning into a single API surface.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Context -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Company Context</h2>
+        </div>
+        <div class="table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th class="col-metric">Metrics</th>
+                <th class="col-exa">Exa</th>
+                <th class="col-competitor">Parallel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-metric">Core Technology</td>
+                <td class="col-exa">Custom embedding models on 144x H200 GPU cluster</td>
+                <td class="col-competitor">Proprietary index with retrieval, crawling, and reasoning layers</td>
+              </tr>
+              <tr>
+                <td class="col-metric">Search Approach</td>
+                <td class="col-exa">Semantic embedding &rarr; meaning-based retrieval</td>
+                <td class="col-competitor">Objective-driven: agents declare intent, Parallel finds it</td>
+              </tr>
+              <tr>
+                <td class="col-metric">Built For</td>
+                <td class="col-exa">AI agents, RAG pipelines, LLM applications</td>
+                <td class="col-competitor">End-to-end browsing, deep research, content extraction</td>
+              </tr>
+              <tr>
+                <td class="col-metric">Key Customers</td>
+                <td class="col-exa">Cursor, Perplexity, Glean</td>
+                <td class="col-competitor">Harvey, Lindy, Day.ai</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Specifications</h2>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Core Technology</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>Neural Transformer</h4>
+            <p>Custom embedding models designed specifically for document retrieval on 144x H200 GPU cluster.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Declarative Semantic</h4>
+            <p>Focus on objective-driven browsing and logic-first navigation.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Index Scale</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>Tens of Billions</h4>
+            <p>Full-text and semantic index of the premium web, refreshed every minute.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Billions</h4>
+            <p>Curated semantic index focused on high-utility knowledge.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Server Latency</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>~1.18s (Global)</h4>
+            <p>"Exa Fast" endpoint achieves sub-425ms response times.</p>
+          </div>
+          <div class="spec-card">
+            <h4>&lt;5s (Standard)</h4>
+            <p>Task API can take up to 30min for deep research.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Content Extraction</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>Built-in Contents</h4>
+            <p>Integrated parsing of HTML, Markdown, and Text. Full content in one call.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Separate Extract API</h4>
+            <p>Modular extraction engine designed for high-accuracy parsing.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Search Modes</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>Neural + Keyword + Auto</h4>
+            <p>Developer chooses the right mode. Semantic, keyword, or hybrid retrieval.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Objective-Driven</h4>
+            <p>Agents declare intent; Parallel determines retrieval strategy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exa's Edge -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-row">
+            <h2 class="section-title">Exa's Edge</h2>
+            <div class="section-links">
+              <a href="https://exa.ai">INFRASTRUCTURE</a>
+              <a href="https://docs.exa.ai">LEARN</a>
+            </div>
+          </div>
+          <p class="section-subtitle">Where the builder's choice excels.</p>
+        </div>
+
+        <div class="edge-grid">
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f9e0;</div>
+            <h3>Embeddings-Native</h3>
+            <p>Built on a custom 144x H200 GPU cluster, Exa doesn't just search &mdash; it predicts the neural relevance of documents. Parallel's architecture focuses on output optimization, not the retrieval mechanism itself.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x2699;</div>
+            <h3>Developer-First</h3>
+            <p>Used by Cursor to power codebase-aware document search. Highly flexible API for custom UI/UX. Parallel wraps retrieval in opinionated end-to-end pipelines with less developer control.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f4c5;</div>
+            <h3>Index Maturity</h3>
+            <p>A 2.5-year head start in crawling and ranking the high-quality web. Superior "First Strike" capabilities. Parallel launched August 2025 with a smaller index.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f517;</div>
+            <h3>Find Similar (Unique)</h3>
+            <p>Search by URL &mdash; give Exa a webpage and get semantically similar content across the entire web. This is architecturally impossible without native embeddings. Parallel has no equivalent.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x26a1;</div>
+            <h3>Exa Fast (&lt;425ms)</h3>
+            <p>Sub-425ms response times for voice agents and real-time copilots. Parallel's fastest endpoint is &lt;5s &mdash; a 10x+ latency gap for latency-sensitive applications.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f50c;</div>
+            <h3>Ecosystem Depth</h3>
+            <p>Native integrations with LangChain, LlamaIndex, CrewAI, and Haystack. Embedded in the AI developer workflow at the framework level, not just platform-level MCP and Vercel integrations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Narrative -->
+    <section class="section">
+      <div class="container">
+        <div class="narrative">
+          <span class="section-label">THE CORE NARRATIVE</span>
+          <h2>Raw ingredients vs.<br>The finished meal.</h2>
+          <p>The distinction between Exa and Parallel is one of <strong>philosophy</strong>. Exa provides you with the raw ingredients &mdash; high-fidelity semantic search, massive index scale, and precision filtering &mdash; giving developers the freedom to bake whatever they want.</p>
+          <p>Parallel delivers the finished meal. It is designed for companies that want an end-to-end browsing solution without managing the nuances of content extraction or multi-step search reasoning.</p>
+          <blockquote>"For sophisticated AI workflows where precision and custom indexing matter, Exa's building-block approach offers significantly better long-term scalability."</blockquote>
+          <div class="btn-row">
+            <a href="https://exa.ai" class="btn btn--primary">Start Building with Exa</a>
+            <a href="https://docs.exa.ai" class="btn btn--outline">View API Documentation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Neural Architect</h4>
+          <p>Building the next generation of AI search and retrieval infrastructure.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Status</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h5>Social</h5>
+          <a href="#">GitHub</a>
+          <a href="#">Discord</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Neural Architect Labs. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

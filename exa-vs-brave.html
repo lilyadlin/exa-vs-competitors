@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exa vs. Brave</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Exa <span>vs.</span> Competitors</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Compare</a>
+        <a href="https://docs.exa.ai" class="nav-link">Docs</a>
+        <a href="https://docs.exa.ai/reference" class="nav-link">API</a>
+        <a href="https://exa.ai/pricing" class="nav-link">Pricing</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://exa.ai" class="btn-nav btn-nav--ghost">Sign In</a>
+        <a href="https://exa.ai" class="btn-nav btn-nav--primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <span class="section-label">STRATEGIC COMPARISON</span>
+        <h1>Exa <em>vs.</em> Brave</h1>
+        <p class="hero-subtitle">Search infrastructure for power tools vs. general-purpose web search repackaged for developers.</p>
+      </div>
+    </section>
+
+    <!-- Description Boxes -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="grid-2">
+          <div class="desc-box">
+            <h3>Exa: The Search Engine for AI</h3>
+            <p>A neural-first search index built to be consumed by LLMs. It provides high-fidelity building blocks (raw content, semantic embeddings, filtering) for developers building custom AI workflows.</p>
+          </div>
+          <div class="desc-box">
+            <h3>Brave: General-Purpose Search API</h3>
+            <p>A traditional keyword-based search engine with 30B+ pages, repackaged as a developer API. It layers LLM summarization on top of conventional web search infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Context -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Company Context</h2>
+        </div>
+        <div class="table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th class="col-metric">Metrics</th>
+                <th class="col-exa">Exa</th>
+                <th class="col-competitor">Brave Search API</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-metric">Core Technology</td>
+                <td class="col-exa">Custom embedding models on 144x H200 GPU cluster</td>
+                <td class="col-competitor">Traditional keyword-based index (30B+ pages)</td>
+              </tr>
+              <tr>
+                <td class="col-metric">Search Approach</td>
+                <td class="col-exa">Semantic embedding &rarr; meaning-based retrieval</td>
+                <td class="col-competitor">Keyword matching &rarr; ranking &rarr; optional LLM summarization</td>
+              </tr>
+              <tr>
+                <td class="col-metric">Built For</td>
+                <td class="col-exa">AI agents, RAG pipelines, LLM applications</td>
+                <td class="col-competitor">Broad use &mdash; consumer search, AI apps, general tools</td>
+              </tr>
+              <tr>
+                <td class="col-metric">Key Customers</td>
+                <td class="col-exa">Cursor, Perplexity, Glean</td>
+                <td class="col-competitor">Cohere, Mistral, Snowflake, Chegg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Specifications</h2>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Core Technology</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>Neural Transformer</h4>
+            <p>Custom embedding models designed specifically for document retrieval.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Traditional Index</h4>
+            <p>Keyword-based index with LLM context layered on top.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Index Scale</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>Tens of Billions</h4>
+            <p>Full-text and semantic index of the premium web, refreshed every minute.</p>
+          </div>
+          <div class="spec-card">
+            <h4>30B+ Pages</h4>
+            <p>General web index with 100M+ updates per day.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Server Latency</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>~1.18s (Global)</h4>
+            <p>"Exa Fast" endpoint achieves sub-425ms response times.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Low Latency (Claimed)</h4>
+            <p>Markets "low latency" without published benchmarks.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Content Extraction</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>Built-in Contents</h4>
+            <p>Integrated parsing of HTML, Markdown, and Text. Full page content in one API call.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Snippets Only</h4>
+            <p>Up to 5 snippets per result. Full content requires separate scraping.</p>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <div class="spec-label">Output Format</div>
+          <div class="spec-card spec-card--highlight">
+            <h4>LLM-Ready</h4>
+            <p>Pre-chunked, embedding-ready content. Clean text, markdown, or highlights.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Standard Results</h4>
+            <p>URLs, titles, snippets, metadata. Requires parsing for LLM use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exa's Edge -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-row">
+            <h2 class="section-title">Exa's Edge</h2>
+            <div class="section-links">
+              <a href="https://exa.ai">INFRASTRUCTURE</a>
+              <a href="https://docs.exa.ai">LEARN</a>
+            </div>
+          </div>
+          <p class="section-subtitle">Where the builder's choice excels.</p>
+        </div>
+
+        <div class="edge-grid">
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f9e0;</div>
+            <h3>Semantic Understanding</h3>
+            <p>Exa trained custom transformer models to create embeddings for every page in its index. Queries match on meaning, not keywords &mdash; producing dramatically better results for complex, multi-layered AI agent queries.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x2699;</div>
+            <h3>Built for AI, Not Retrofitted</h3>
+            <p>Brave is a browser company that added an API on top of consumer search. Exa was built from day one for machine consumption &mdash; structured outputs, clean content, zero HTML parsing needed.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f517;</div>
+            <h3>Find Similar (Unique)</h3>
+            <p>Give Exa a URL and get semantically similar content from across the entire web. This embeddings-native capability is architecturally impossible with keyword search. Brave has no equivalent.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f4c4;</div>
+            <h3>Content Extraction Quality</h3>
+            <p>Exa returns full text, intelligent highlights, and clean markdown in one API call. Brave returns snippets only &mdash; full content requires an entire separate scraping layer.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f680;</div>
+            <h3>Deeper Product Surface</h3>
+            <p>Exa Deep for agentic multi-query search. Exa Research achieving 94.9% on SimpleQA. Websets for bulk entity discovery. Fast mode for voice agents. A much richer surface for AI-native workflows.</p>
+          </div>
+          <div class="edge-card">
+            <div class="edge-icon">&#x1f50c;</div>
+            <h3>Framework Ecosystem</h3>
+            <p>Deep integrations with LangChain, LlamaIndex, CrewAI, and Haystack &mdash; embedded at the tool/framework level where AI developers actually build, not just an MCP server.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Narrative -->
+    <section class="section">
+      <div class="container">
+        <div class="narrative">
+          <span class="section-label">THE CORE NARRATIVE</span>
+          <h2>Raw ingredients vs.<br>The finished meal.</h2>
+          <p>Brave is a great general-purpose search API. But we're not in the general-purpose era anymore. AI agents don't search like humans &mdash; they need semantic understanding, structured outputs, and content ready for LLM consumption without an entire parsing pipeline.</p>
+          <p>That's what Exa was built for from day one. We're not a browser company that added an API &mdash; we're a search company that built a new kind of search engine specifically because the old approach doesn't work for AI.</p>
+          <blockquote>"For sophisticated AI workflows where precision and custom indexing matter, Exa's building-block approach offers significantly better long-term scalability."</blockquote>
+          <div class="btn-row">
+            <a href="https://exa.ai" class="btn btn--primary">Start Building with Exa</a>
+            <a href="https://docs.exa.ai" class="btn btn--outline">View API Documentation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Neural Architect</h4>
+          <p>Building the next generation of AI search and retrieval infrastructure.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Status</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h5>Social</h5>
+          <a href="#">GitHub</a>
+          <a href="#">Discord</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Neural Architect Labs. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
